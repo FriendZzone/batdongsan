@@ -1,10 +1,13 @@
 import React from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Home from './Home';
 
 function Pages(props) {
     return (
-        <div>
-            
-        </div>
+        <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='*' element={<Navigate to={'/'} />} />
+        </Routes>
     );
 }
 
