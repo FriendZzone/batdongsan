@@ -1,10 +1,10 @@
 import React from 'react';
-import SearchBox from '../SearchBox'
+import Home from '../components/Home';
 
 function HomePage(props) {
     return (
         <div>
-            <SearchBox/>
+            <Home />
         </div>
     );
 }
